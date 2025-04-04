@@ -9,12 +9,30 @@ body{
     width: 1440px;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
+header img{    
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    
 }
 
+.buscador{
+    padding: 10px;
+}
+
+.formularioNavegador ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    list-style: none;
+}
+
+
+.formularioNavegador li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .contenedorPadre{
     display: flex;
@@ -48,12 +66,13 @@ h3 {
     margin-bottom: 10px;
 }
 
-a{
+.contenedor a{
     background-color: grey;
     color: white;
     padding: 8px 12px;
     border-radius: 5px;
     margin-top: 50px;
+    text-decoration: none;
 }
 
 h1{
@@ -63,4 +82,8 @@ h1{
     padding: 5px;
     border-radius: 4px;
     font-weight: 100;
+}
+
+footer{
+    color:rgb(43, 166, 177);
 }
