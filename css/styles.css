@@ -100,6 +100,7 @@ h1{
     max-height: 20vw;
     max-width: 20vw;
     align-content: center;
+    justify-content: center; /*acá probé justificandolo y me funciona */
     /* NO FUNCIONA EL CENTRALIZADO */
 }
 
