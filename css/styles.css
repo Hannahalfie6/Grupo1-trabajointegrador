@@ -88,6 +88,7 @@ main h1 {
     background: #1e2130;
     margin-bottom: 20px;
     text-align: center;
+    
 }
 
 .contenedor img {
@@ -127,17 +128,47 @@ footer p {
     font-size: 16px;
 }
 
+/* DETALLES */
 
-
-
-
-
-.detallePelicula{
-    max-height: 20vw;
-    max-width: 20vw;
-    align-content: center; 
-    /* NO FUNCIONA EL CENTRALIZADO */
+.detallePelicula {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
+
+.detalleSerie{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.detalle-titulo {
+    font-size: 32px;
+    color: white;
+}
+
+.detalle-calificacion {
+    color: #99c0f1;
+    font-size: 20px;
+}
+
+.detalle-info {
+    color: #a0a8c0;
+    font-weight: normal;
+}
+
+.detalle-descripcion {
+    color: #e0e3eb;
+
+}
+
+.detalle-genero a {
+    color: #00a8e8;
+    text-decoration: none;
+}
+
+
+
 
 .detalleSerie{
     max-height: 20vw;
