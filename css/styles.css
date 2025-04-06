@@ -4,100 +4,133 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
+    background-color: #1a1d29;
     color: white;
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
 }
 
-<<<<<<< HEAD:css/style.css
 header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center; 
         height: 150px; 
     }
     
-
 .logo{
-    width: 300px;
-    height: auto;
+    height: 75px;    
 }
 
-.buscador{
-    padding: 10px;
+.buscador {
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 30px;
+}
+
+.buscador input {
+    width: 80%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2d3548;
+    color: white;
+    font-size: 14px;
+}
+
+.buscador button {
+    width: 20%;
+    background-color: #0063e5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .formularioNavegador ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
     list-style: none;
+    display: flex;
+    gap: 24px; 
+    margin: 0;
+    padding: 0;
 }
-
 
 .formularioNavegador li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+        color: white;
+        text-decoration: none;      
 }
+
+main {
+    padding: 20px;
+    background-color: #12141d;
+    color: white;
+}
+
+main h1 {
+    font-size: 28px;
+    margin: 30px 0 20px 10px;
+    color: #ffffff;
+}
+
 
 .contenedorPadre{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 200px;
-    padding: 20px;
-    margin: 0 auto;
-    
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 .contenedor{
-    width: 300px;
-    background-color: #191818;
-    padding: 15px;
-    border-radius: 8px;
+    width: 150px;
+    background: #1e2130;
+    margin-bottom: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-
-    
 }
 
-.contenedor a{
-    background-color: grey;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin-top: 50px;
-    text-decoration: none;
+.contenedor img {
+    width: 100%;
+    height: 200px;
 }
 
-.contenedor h3{
-    padding-bottom: 8px;
-}
-
-.contenedorPadre img{
-    width: 200px;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-h3 {
+.contenedor h2 {
     font-size: 14px;
-    color: grey;
+    margin: 10px 5px 5px;
+}
+
+.contenedor h3 {
+    font-size: 12px;
+    color: #a0a8c0;
+    margin: 0 5px 10px;
+    font-weight: normal;
+}
+
+.contenedor a {
+    display: inline-block;
+    background: #0063e5;
+    color: white;
+    padding: 5px 10px;
     margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white; 
+    font-size: 16px;
 }
 
 
-h1{
-    display: flex;
-    justify-content: center;
-    background-color: #191818;
-    padding: 5px;
-    border-radius: 4px;
-    font-weight: 100;
-}
+
+
+
 
 .detallePelicula{
     max-height: 20vw;
@@ -115,6 +148,4 @@ h1{
 }
 
 
-footer{
-    color:rgb(43, 166, 177);
-}
+
