@@ -167,16 +167,62 @@ footer p {
     text-decoration: none;
 }
 
-
-
-
-.detalleSerie{
-    max-height: 20vw;
-    max-width: 20vw;
-    align-content: center;
-    justify-content: center; /*acá probé justificandolo y me funciona */
-    /* NO FUNCIONA EL CENTRALIZADO */
+/* LOGIN */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #1a1d29;
 }
 
+.login_container {
+    background: #2d3548;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
 
+.login_container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
 
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    color: #a0a8c0;
+}
+
+.form_control {
+    width: 100%;
+    padding: 10px;
+    background: #1a1d29;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.boton {
+    width: 100%;
+    padding: 12px;
+    background: #0063e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.login_container p {
+    text-align: center;
+    color: #a0a8c0;
+    margin-top: 15px;
+}
+
+.login_container a {
+    color: #00a8e8;
+}
