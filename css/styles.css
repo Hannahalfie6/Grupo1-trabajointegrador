@@ -226,3 +226,48 @@ footer p {
 .login_container a {
     color: #00a8e8;
 }
+
+/* REGISTRO */
+.registrate{
+    display: flex;
+    justify-content: center;
+}
+.contenedorFormRegister{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #1a1d29;
+}
+.contenedorFormRegister div{
+    padding: 5px;
+}
+.contenedorFormRegister label{
+    text-align: center;
+    color: #a0a8c0;
+    margin-top: 15px;
+}
+.contenedorFormRegister span{
+    text-align: center;
+    color: #a0a8c0;
+    margin-top: 15px;
+}
+.yaTengo{
+    text-align: center;
+}
+.contenedorFormRegister a{
+    color: #00a8e8;
+}
+.botonEnviarRegistro{
+    width: 100%;
+    padding: 12px;
+    background: #0063e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.botonEnviarRegistro a{
+    color: white;
+    text-decoration: none;
+}
+
