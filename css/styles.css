@@ -10,7 +10,7 @@ body{
     margin: 0 auto;
     padding: 20px;
 }
-
+/* HEADER */
 header{
         display: flex;
         justify-content: space-between;
@@ -62,18 +62,18 @@ header{
         text-decoration: none;      
 }
 
-main {
+/* INDEX */
+.mainindex{
     padding: 20px;
     background-color: #12141d;
     color: white;
 }
 
-main h1 {
+.mainindex h1 {
     font-size: 28px;
     margin: 30px 0 20px 10px;
     color: #ffffff;
 }
-
 
 .contenedorPadre{
     display: flex;
@@ -167,7 +167,7 @@ footer p {
     text-decoration: none;
 }
 
-/* LOGIN */
+/* FORMULARIOS */
 .container {
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ footer p {
     background: #1a1d29;
 }
 
-.login_container {
+.login_container, .register_container{
     background: #2d3548;
     padding: 30px;
     border-radius: 8px;
@@ -183,19 +183,17 @@ footer p {
     max-width: 400px;
 }
 
-.login_container h2 {
+
+.login_container h2, .register_container h2  {
     color: white;
     text-align: center;
     margin-bottom: 25px;
     font-size: 24px;
 }
 
+
 .form_group {
     margin-bottom: 15px;
-}
-
-.form_group label {
-    color: #a0a8c0;
 }
 
 .form_control {
@@ -217,57 +215,15 @@ footer p {
     margin-top: 10px;
 }
 
-.login_container p {
+.login_container p, .register_container p  {
     text-align: center;
     color: #a0a8c0;
     margin-top: 15px;
 }
 
-.login_container a {
+.login_container a, 
+.register_container a {
     color: #00a8e8;
 }
 
-/* REGISTRO */
-.registrate{
-    display: flex;
-    justify-content: center;
-}
-.contenedorFormRegister{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background: #1a1d29;
-}
-.contenedorFormRegister div{
-    padding: 5px;
-}
-.contenedorFormRegister label{
-    text-align: center;
-    color: #a0a8c0;
-    margin-top: 15px;
-}
-.contenedorFormRegister span{
-    text-align: center;
-    color: #a0a8c0;
-    margin-top: 15px;
-}
-.yaTengo{
-    text-align: center;
-}
-.contenedorFormRegister a{
-    color: #00a8e8;
-}
-.botonEnviarRegistro{
-    width: 100%;
-    padding: 12px;
-    background: #0063e5;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-.botonEnviarRegistro a{
-    color: white;
-    text-decoration: none;
-}
 
