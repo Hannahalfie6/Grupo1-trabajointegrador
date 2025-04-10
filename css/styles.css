@@ -37,6 +37,7 @@ header{
     background-color: #2d3548;
     color: white;
     font-size: 14px;
+    margin-right: 5px;
 }
 
 .buscador button {
@@ -271,3 +272,19 @@ footer p {
     text-decoration: none;
 }
 
+/* GENEROS PELICULAS Y GENEROS SERIES */
+.generos ul{
+    display: flex;
+    justify-content: space-around;
+}
+.generos li{
+    padding: 5px;
+    list-style: none;
+}
+.generos a{
+    text-decoration: none;
+    color:#00a8e8;
+    border: 2px solid #00a8e8;
+    border-radius: 4px;
+    padding: 8px;
+}
