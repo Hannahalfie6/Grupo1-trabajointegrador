@@ -10,7 +10,7 @@ body{
     margin: 0 auto;
     padding: 20px;
 }
-
+/* HEADER */
 header{
         display: flex;
         justify-content: space-between;
@@ -63,18 +63,18 @@ header{
         text-decoration: none;      
 }
 
-main {
+/* INDEX */
+.mainindex{
     padding: 20px;
     background-color: #12141d;
     color: white;
 }
 
-main h1 {
+.mainindex h1 {
     font-size: 28px;
     margin: 30px 0 20px 10px;
     color: #ffffff;
 }
-
 
 .contenedorPadre{
     display: flex;
@@ -94,7 +94,7 @@ main h1 {
 
 .contenedor img {
     width: 100%;
-    margin-bottom: 10px;
+    height: auto;
 }
 
 .contenedor h2 {
@@ -118,15 +118,13 @@ main h1 {
     text-decoration: none;
     font-size: 12px;
 }
-
+/* FOOTER */
 footer {
-    padding: 40px 20px;
+    color: #ffffff;
     text-align: center;
-}
-
-footer p {
-    color: white; 
-    font-size: 16px;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 40px;
 }
 
 /* DETALLES */
@@ -168,7 +166,7 @@ footer p {
     text-decoration: none;
 }
 
-/* LOGIN */
+/* FORMULARIOS */
 .container {
     display: flex;
     justify-content: center;
@@ -176,7 +174,7 @@ footer p {
     background: #1a1d29;
 }
 
-.login_container {
+.login_container, .register_container{
     background: #2d3548;
     padding: 30px;
     border-radius: 8px;
@@ -184,19 +182,17 @@ footer p {
     max-width: 400px;
 }
 
-.login_container h2 {
+
+.login_container h2, .register_container h2  {
     color: white;
     text-align: center;
     margin-bottom: 25px;
     font-size: 24px;
 }
 
+
 .form_group {
     margin-bottom: 15px;
-}
-
-.form_group label {
-    color: #a0a8c0;
 }
 
 .form_control {
@@ -218,58 +214,184 @@ footer p {
     margin-top: 10px;
 }
 
-.login_container p {
+.login_container p, .register_container p  {
     text-align: center;
     color: #a0a8c0;
     margin-top: 15px;
 }
 
-.login_container a {
+.login_container a, 
+.register_container a {
     color: #00a8e8;
 }
 
-/* REGISTRO */
-.registrate{
-    display: flex;
-    justify-content: center;
-}
-.contenedorFormRegister{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background: #1a1d29;
-}
-.contenedorFormRegister div{
-    padding: 5px;
-}
-.contenedorFormRegister label{
-    text-align: center;
-    color: #a0a8c0;
-    margin-top: 15px;
-}
-.contenedorFormRegister span{
-    text-align: center;
-    color: #a0a8c0;
-    margin-top: 15px;
-}
-.yaTengo{
-    text-align: center;
-}
-.contenedorFormRegister a{
-    color: #00a8e8;
-}
-.botonEnviarRegistro{
+/* GENEROS PELICULAS */
+.generos_container {
     width: 100%;
-    padding: 12px;
-    background: #0063e5;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
+    padding: 40px 20px;
 }
-.botonEnviarRegistro a{
+
+.generos_container h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.generos_container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.generos_container li {
+    width: 250px;
+    height: 120px;
+    background-color: #192a56;
+    border-radius: 12px;
+}
+
+.generos_container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+/* DETALLE GENERO */
+
+
+
+
+
+
+/* Medida para COMPUTADORAS, que la medida es 1024px o menos */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .buscador {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .formularioNavegador ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .contenedorPadre {
+        justify-content: center;
+    }
+    .contenedor {
+        margin: 10px;
+    }
+}
+
+/* Medida para TABLETS, que la medida es de 768px o menos */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    header{
+        flex-direction: column;
+        height:auto;
+        text-align: center;
+    }
+    .logo {
+        height: 60px;
+    }
+    .buscador {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .buscador button {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+    .formularioNavegador ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainindex h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .contenedorPadre {
+        justify-content: center;
+    }
+    .contenedor {
+        width: 45%;
+        max-width: 300px;
+    }
+    footer {
+        font-size: 18px;
+    }
+    .login_container {
+        width: 90%;
+    }
+    .register_container {
+        width: 90%;
+    }
+}
+
+/* Medida para CELULARES, que la medida es de 420px o menos */
+@media (max-width: 420px) {
+    .contenedor {
+        width: 100%;
+        max-width: 100%;
+    }
+    .mainindex h1 {
+        font-size: 20px;
+    }
+    .detalle-titulo {
+        font-size: 22px;
+        text-align: center;
+    }
+    .detalle-calificacion {
+        font-size: 16px;
+        text-align: center;
+    }
+    .detalle-info {
+        font-size: 16px;
+        text-align: center;
+    }
+    .buscador {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .login_container h2 {
+        font-size: 20px;
+    }
+    .register_container h2 {
+        font-size: 20px;
+    }
+    .form_control {
+        font-size: 14px;
+    }
+    .boton {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 16px;
+    }
 }
 
 /* GENEROS PELICULAS Y GENEROS SERIES */

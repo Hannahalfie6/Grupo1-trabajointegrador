@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de busqueda</title>
+    <title>Detalle genero</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
     <header>
-
-        <img class="logo" src="./img/Disney_Plus_logo.svg.png" alt="">
-
-        <form class="buscador" action="./resultadosDeBusqueda.html" method="get">
+        <img class="logo" src="./img/disneylogo.jpg.avif" alt="">
+        <form action="./resultadosDeBusqueda.html" method="get">
             <input type="text" name="" id="" placeholder="Buscar..." required>
             <button type="submit">Buscar</button>
         </form>
-
         <nav class="formularioNavegador">
             <ul>
                 <li>
@@ -36,22 +32,31 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    
-    <main>
-<!-- Es la página donde el usuario podrá ver los resultados de la búsqueda que realizó en el buscador que se encuentra en Header.
-La página deberá mostrar:
-    El término buscado (por el momento ese datos estará fijo).
-    La lista de resultados que coincidan con el término buscado.
-    Los elementos de la lista que coincidan con páginas del sitio deberán ser hipervínculos a las páginas de detalle correspondientes. 
-        Por ejemplo: el resultado de una película deberá llevar al detalle de la misma; el resultado de una serie deberá llevar al detalle de una serie.
-    Incluir una leyenda avisando al usuario para el caso de no haber datos coincidentes con el término buscado.-->
+    </header>   
+        
+    <main class="main-detalle-genero">
+
+        <h1>Misterio</h1>
+        <h2>Detalle del género:</h2>
+        <p>El misterio se enfoca en resolver un enigma o hecho desconocido, manteniendo al espectador en suspenso a través de pistas, giros narrativos y revelaciones progresivas. Su objetivo es generar intriga, tensión y curiosidad, con una narrativa que invita a descubrir la verdad detrás de lo oculto.</p>
+
+        <img src="./img/lcdp.jpg" alt="">
+        <h2>La casa de papel</h2>
+
+        <img src="./img/stranger.jpg" alt="">
+        <h2>Stranger things</h2>
+
+        <img src="./img/dahmer.jpg" alt="">
+        <h2>Dahmer</h2>
+
     </main>
-    
+
+
     <footer>
         <p>Hannah Alfie | Delfina Iribarren | Magdalena Sanchez</p>
         <p>📧 Disneyplus@gmail.com | 📞 11-2345-6789</p>
     </footer>
+
 
 </body>
 </html>
