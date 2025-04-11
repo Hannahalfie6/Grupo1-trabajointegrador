@@ -270,20 +270,46 @@ footer {
 }
 
 /* DETALLE GENERO */
-.detalleGen img {
-    width: 200px;
-    height: 220px;
-
+.detalle-genero {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.detalleGen li {
-    list-style-type: none;
+
+.detalle-genero h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.detalleGen ul {
+.detalle-genero h2 {
+    font-size: 24px;
+    color: #00a8e8;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+
+.lista-peliculas {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
+
+
+.pelicula {
+    width: 200px;
+    background: #192a56;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pelicula img {
+    width: 100%;
+    height: 300px;
+}
+
 
 
 /* Medida para COMPUTADORAS, que la medida es 1024px o menos */
@@ -401,21 +427,4 @@ footer {
     footer {
         font-size: 16px;
     }
-}
-
-/* GENEROS PELICULAS Y GENEROS SERIES */
-.generos ul{
-    display: flex;
-    justify-content: space-around;
-}
-.generos li{
-    padding: 5px;
-    list-style: none;
-}
-.generos a{
-    text-decoration: none;
-    color:#00a8e8;
-    border: 2px solid #00a8e8;
-    border-radius: 4px;
-    padding: 8px;
 }
