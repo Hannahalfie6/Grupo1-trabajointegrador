@@ -270,10 +270,20 @@ footer {
 }
 
 /* DETALLE GENERO */
+.detalleGen img {
+    width: 200px;
+    height: 220px;
 
+}
 
+.detalleGen li {
+    list-style-type: none;
+}
 
-
+.detalleGen ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /* Medida para COMPUTADORAS, que la medida es 1024px o menos */
