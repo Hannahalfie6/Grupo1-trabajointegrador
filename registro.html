@@ -46,16 +46,16 @@
                     <form method="get" class="register_form" action="login.html">
                         <div class="form_group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form_control" >
+                            <input type="email" name="email" id="email" class="form_control" required>
                             <div class="invalid_feedback email"></div>                        
                         </div>
                         <div class="form_group">
                             <label for="password">Contraseña</label>
-                            <input type="password" name="password" id="password" class="form_control">
+                            <input type="password" name="password" id="password" class="form_control" required>
                             <div class="invalid_feedback password"></div>
                         </div>
                         <div class="terminos_condiciones">
-                            <input type="checkbox" name="terminos" id="">Acepto los terminos y condiciones
+                            <input type="checkbox" name="terminos" id="" required>Acepto los terminos y condiciones
                         </div>
                     <div>
                         <button type="submit" class="boton boton_success">Enviar</button>
