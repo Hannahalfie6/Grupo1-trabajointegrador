@@ -75,6 +75,27 @@ header{
     padding: 10px;
     margin-bottom: 30px;
 }
+.contenedorPeliValoradas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.contenedorPadrePeliPopular{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.contenedorSeriesPopulares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
 .contenedor{
     width: 200px;
     background: #1e2130;
