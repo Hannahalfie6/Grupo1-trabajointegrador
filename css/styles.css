@@ -56,7 +56,14 @@ header{
         color: white;
         text-decoration: none;      
 }
-
+.inputRadioButton{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+.radios{
+    display: flex;
+}
 /* INDEX */
 .mainindex{
     padding: 20px;
