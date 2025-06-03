@@ -1,6 +1,7 @@
 //traemos serie
 let querySelector = location.search;
-let querySelectorTo = new URLSearchParams(querySelector);
+let queryParams = new URLSearchParams(querySring);
+let idSerie = queryParams.get('id');
 
 
 
