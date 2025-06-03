@@ -3,19 +3,24 @@ let querySelector = location.search;
 let queryParams = new URLSearchParams(querySring);
 let idSerie = queryParams.get('id');
 
-
-
-
-
-
-
-
-// En la página detalle de una serie debe figurar al menos:
-// Foto de la portada.
-// Nombre o título.
-// Calificación (rating).
-// Fecha de estreno.
-// Sinópsis.
-// Género al que pertenece la serie.
-// Funcionalidad: La información de cada página de detalles debe provenir de forma dinámica desde un endpoint de la API. Para acceder a cada página de detalle deberán incorporar query strings en la URL (indicando qué película o serie desean obtener) para obtener los datos puntuales desde un endpoint de la API.
-// Atención: cada referencia cruzada en las páginas de detalle debe permitir navegación. Ejemplo: si en el detalle de películas se ve el nombre de un género al clickear sobre el mismo el sitio debe llevarme al detalle del género.
+fetch('https://api.themoviedb.org/3/tv/series_id?language=en-US')
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data);
+    let main = document.querySelector('.mainindex');
+    let detalles = '';
+    for(let i=0; i<  data.length; i++){ //ALGO MAS EN EL LENGTH//
+        detalles += //FALTA EL LINK ACA
+    };
+    main.innerHTML= `
+    <img class="detalleSerie" src="./img/${}.jpg" alt="" srcset="">
+        <h1 class="detalle-titulo"> ${} </h1>
+        <h2 class="detalle-calificacion">Calificacion: ${}</h2>
+        <h3 class="detalle-info">Fecha de estreno: ${}</h3>
+        <p class="detalle-descripcion"> ${}</p>
+        <h3 class="detalle-genero">Genero: ${generos}>Acción</a></h3>
+    `;
+    })
+.catch(error)

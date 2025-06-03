@@ -25,3 +25,5 @@ fetch("https://api.themoviedb.org/3/movie/${idPelicula}?api_key=90b45a60c2f1bb62
     `;
 })
 .catch()
+
+//data.genres.length esta mal en el for
