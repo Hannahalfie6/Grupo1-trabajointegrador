@@ -286,6 +286,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 .pelicula {
     width: 200px;
