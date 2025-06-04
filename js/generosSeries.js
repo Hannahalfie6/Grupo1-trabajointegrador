@@ -9,7 +9,7 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=90b45a60c2f1bb623a150a
     let generoSeries = '';
     for (let i=0 ; i < info.length ; i ++){
         generoSeries += `<li>
-                <a href="./detalleGenero.html?id=${info[i].id}&type=serie">${info[i].name}</a>
+                <a href="./detalleGenero.html?id=${info[i].id}&type=serie&name=${info[i].name}">${info[i].name}</a>
             </li>
         `
     }

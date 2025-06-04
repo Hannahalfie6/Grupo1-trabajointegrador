@@ -9,7 +9,7 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=90b45a60c2f1bb623a1
     let generoPeliculas = '';
     for (let i=0 ; i < info.length ; i ++){
         generoPeliculas += `<li>
-                <a href="./detalleGenero.html?id=${info[i].id}&type=pelicula">${info[i].name}</a>
+                <a href="./detalleGenero.html?id=${info[i].id}&type=pelicula&name=${info[i].name}">${info[i].name}</a>
             </li>
         `
     }
