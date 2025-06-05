@@ -3,7 +3,7 @@ let querySelector = location.search;
 let querySelectorTo = new URLSearchParams(querySelector);
 let idPelicula = querySelectorTo.get('id');
 
-fetch("https://api.themoviedb.org/3/movie/${idPelicula}?api_key=90b45a60c2f1bb623a150a6f0011fbcb&language=es-US")
+fetch(`https://api.themoviedb.org/3/movie/${idPelicula}?api_key=90b45a60c2f1bb623a150a6f0011fbcb&language=es-US`)
 .then(function(response){
     return response.json();
 })
