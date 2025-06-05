@@ -1,4 +1,3 @@
-//trae pelicula sacandole el atributo id
 let querySelector = location.search;
 let querySelectorTo = new URLSearchParams(querySelector);
 let idPelicula = querySelectorTo.get('id');
@@ -12,7 +11,7 @@ fetch(`https://api.themoviedb.org/3/movie/${idPelicula}?api_key=90b45a60c2f1bb62
     let main =document.querySelector('.mainindex');
     let generos = '';
     for (let i=0; i < data.genres.length; i++){
-        generos += '<a href="./detalleGenero.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=pelicula">${data.genres[i].name} </a>';
+        generos += `<a href="./detalleGenero.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=pelicula">${data.genres[i].name} </a>`;
     }
     main.innerHTML = `
     <img class="detallePelicula" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
@@ -25,5 +24,3 @@ fetch(`https://api.themoviedb.org/3/movie/${idPelicula}?api_key=90b45a60c2f1bb62
     `;
 })
 .catch()
-
-//data.genres.length esta mal en el for
