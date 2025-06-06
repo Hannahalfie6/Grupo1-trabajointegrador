@@ -8,7 +8,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=90b45a60c2f1bb623a150a
     let info = data.results;
     let section = document.querySelector('.contenedorPadrePeliPopular');
     let peliPopulares = '';
-    for (let i=0 ; i < 6 ; i ++){
+    for (let i=0 ; i < 5 ; i ++){
         peliPopulares += `<article class="contenedor">
                 <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="">
                 <h3>${info[i].title}</h3>
@@ -31,7 +31,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=90b45a60c2f1bb623a15
     let info = data.results;
     let section = document.querySelector('.contenedorPeliValoradas');
     let peliValoradas = '';
-    for (let i=0 ; i < 6 ; i ++){
+    for (let i=0 ; i < 5 ; i ++){
         peliValoradas += `<article class="contenedor">
                 <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="">
                 <h3>${info[i].title}</h3>
@@ -54,7 +54,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=90b45a60c2f1bb623a150a6f0
     let info = data.results;
     let section = document.querySelector('.contenedorSeriesPopulares');
     let peliPopulares = '';
-    for (let i=0 ; i < 6 ; i ++){
+    for (let i=0 ; i < 5 ; i ++){
         peliPopulares += `<article class="contenedor">
                 <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="">
                 <h3>${info[i].title}</h3>
